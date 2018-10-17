@@ -232,7 +232,6 @@ nav.navbar-static-top {
     font-weight: 300;
     line-height: 1.8em;
     color: #191919;
-	z-index: -4;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -242,7 +241,6 @@ nav.navbar-static-top {
     background-color: transparent;
     color: #347CD9;
     font-weight: 500;
-	z-index: -3;
 }
 
 
