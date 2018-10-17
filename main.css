@@ -242,6 +242,7 @@ nav.navbar-fixed-top {
     background-color: transparent;
     color: #347CD9;
     font-weight: 500;
+	z-index: -1;
 }
 
 
