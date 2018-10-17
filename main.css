@@ -232,6 +232,7 @@ nav.navbar-fixed-top {
     font-weight: 300;
     line-height: 1.8em;
     color: #191919;
+	z-index: -1;
 }
 
 .navbar-default .navbar-nav > .active > a,
