@@ -1,18 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700|Lato:400,300,300italic,400italic,700,700italic);
 body {
-    font-family: "Raleway", "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.8em;
-    color: #5a646e;
     margin: 0;
     padding: 0;
 }
 
-header,
-section {
-    overflow: hidden;
-}
 a:hover,
 a:focus {
     text-decoration: none;
@@ -35,10 +26,6 @@ h4 {
 
 .padding-top-low {
     padding-top: 30px;
-}
-
-.padding-top-over {
-    padding-top: 0px;
 }
 
 .padding-top-high {
@@ -232,7 +219,6 @@ h4 {
     background: rgba(0, 0, 0, 0) url("../img/top.png") no-repeat scroll 0 bottom;
 }
 
-
 /* 
 * ==========================================================================
       Navbar
@@ -241,11 +227,11 @@ h4 {
 
 nav.navbar-fixed-top {
     background: #fff;
-    transition: all 0.8s ease-in-out;
-}
-
-nav.navbar-slide {
-    top: 0px;
+    font-family: "Raleway", "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #191919;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -264,11 +250,35 @@ nav.navbar-slide {
 * ========================================================================== 
 */
 
-
-.counter-section .color-overlay {
-    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+.intro-section {
+    background-image: url("../img/hotel-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
+.intro-section .color-overlay,
+.counter-section .color-overlay {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
+
+.counter-section-flights .color-overlay {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
+
+.intro-sectionf {
+    background-image: url("../img/travel-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.intro-sectionf .color-overlay,
+.counter-section .color-overlay {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
 
 /* 
 * ==========================================================================
@@ -823,27 +833,9 @@ p.features-tagline {font-size:1.5em}
 * ========================================================================== 
 */
 
-.caption {
-     margin-left: 10px;
-	 margin-top: 50px;
-	 margin-bottom 7px;
-	 font-size: 1.4em;
-}	
 .why-feature {
-     margin: 0;
-     padding: 0;	
-}
-
-.col-md-12 {
-	 margin-top:-20px;
-}
-								
-.GoogleAd {
-	 margin-top: -17px;
-}
-						   
-.instruction {
-	 margin-top: -0.3px;
+    margin: 0;
+    padding: 0;	
 }
 
 @media only screen and (max-width: 991px) {
@@ -911,39 +903,22 @@ p.features-tagline {font-size:1.5em}
 * ========================================================================== 
 */
 
-.counter-section-hotels {
+.counter-section {
     background-color: #f1f3f8;
-	background-image: url("../img/hotel-bg.jpg");
-    background-position: bottom;
+    background-image: url("../img/intro-bg.jpg");
+	background-image: url("../img/widget-bg.jpg");
+    background-position:bottom;
     background-size: cover;
-	background-attachment: fixed;
-
+    background-attachment: fixed;
 }
 
 .counter-section-flights {
     background-color: #f1f3f8;
-	background: url("../img/travel-bg.jpg");
-	background-position: center;
-	background-attachment: fixed;
-}
-
-@media only screen and (min-width: 1200px) {
-.counter-section-flights {
-    background-color: #f1f3f8;
-	background: url("../img/travel-bg.jpg");
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-.counter-section-flights {
-    background-color: #f1f3f8;
-	background: url("../img/travel-bg2.jpg");
-	background-position: bottom;
-	background-attachment: fixed;
-  }
+    background-image: url("../img/intro-bg.jpg");
+	background-image: url("../img/widget-bg.jpg");
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .counter-box {
@@ -1104,6 +1079,7 @@ p.features-tagline {font-size:1.5em}
 .panel-heading a.collapsed:after {
     content: "\f067";
     color: #347CD9;
+	
 }
 
 .panel-heading a.collapsed {
@@ -1667,70 +1643,49 @@ p.features-tagline {font-size:1.5em}
 * ========================================================================== 
 */
 
-footer {
-     background-color: #21292E;
-     padding:40px 0px;
-}	       
-
-footer ul li{
-    padding:5px 0px;
-	background-color: #21292E;
+.topup-lonk {
+    position: relative;
+    left: 50%;
+    top: -50px;
+    margin-left: -25px;
 }
 
-.adress span , .contact span , .social span{
-   background-color: #21292E;
-   color: #FFF; 
-   font-weight: 800; 
-   padding-bottom: 10px; 
-   margin-bottom: 20px;
-   display: block;
-   text-transform: uppercase;
-   font-size: 15px;
-   letter-spacing: 3px;
-}
- 
-.adress li p , .contact li a , .social li a{
-	background-color: #21292E;
-    color:#FFF;
-    letter-spacing: 2px;
-    text-decoration:none;
-    font-size:15px;
+.topup-link-btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #347CD9;
+    color: #fff;
+    border-radius: 50%;
 }
 
-.social li i{
-    float:left;
-	height:100px;
+.topup-link-btn:hover {
+    background: #fff;
+    color: #347CD9;
 }
 
-
-.adress , .contact , .social {
-	background-color: #21292E;
-    list-style: none;
+.fa-arrow-up {
+	padding-top: 0px;
 }
 
-.fa {
-    color:#9c9c9c;
-    margin-right: 15px;
-    font-size:30px;
-}
-	
-.copyright {
-    background-color:#2D3941;
+.copyright-text p {
+    margin-bottom: 0;
+    font-family: lato;
 }
 
-.copyright p{
-	color:#fff;
-	font-size:12px;
-	padding:5px 0 10px 0;
+.copyright-section {
+    font-family: "Raleway", "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #191919;
 }
 
-.copyright-foot {
-	padding: 80px 0px;
+.copyright-menu {
+	font-size: 13px;
 }
-	
-.logo-footer {
-	padding-top: 30px;
-}
+
 
 /* 
 * ==========================================================================
