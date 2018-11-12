@@ -1687,7 +1687,7 @@ footer ul li{
 .fa-facebook-square , .fa-twitter-square , .fa-google-plus-square , .fa-envelope-square {
     color:#9c9c9c;
     margin-right: 15px;
-    font-size:3px;
+    font-size:30px !important;
 }
 	
 .copyright {
