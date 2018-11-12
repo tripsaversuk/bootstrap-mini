@@ -1644,6 +1644,7 @@ p.features-tagline {font-size:1.5em}
 */
 
 footer {
+	 font-family: "Raleway", "Lato", sans-serif !important;
      background-color: #21292E;
      padding:40px 0px;
 }	       
